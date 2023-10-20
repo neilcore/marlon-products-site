@@ -257,8 +257,9 @@ function App() {
           <img src={karavan} alt="" style={{"marginRight": "170px"}}/>
           <img src={marlonlogo} alt="" style={{"marginRight": "170px"}}/>
           <img src={shoremaster} alt="" style={{"marginRight": "170px"}}/>
-          <img src={rhinobrand} alt="" style={{"marginRight": "170px"}}/>
-          <img src={karavan} alt="" style={{"marginRight": "170px"}}/>
+          <img src={rhinobrand} alt="" style={{"marginRight": "60px"}}/>
+          <img src={shoremaster} alt="" style={{"marginRight": "170px"}}/>
+          {/* <img src={karavan} alt="" style={{"marginRight": "170px"}}/> */}
         </div>
       </div>
 
