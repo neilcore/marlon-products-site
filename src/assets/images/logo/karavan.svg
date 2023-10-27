@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 35" width="312" height="35">
+	<title>karavan</title>
+	<defs>
+		<image  width="312" height="35" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAAjAgMAAAB9d/4VAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAAAAAAAAAAg2PpwAAAAAN0Uk5TAP8BHlUJOgAAAlhJREFUeJyNlk1y5CAMhXGqWOQAHKHvQRa9J1UolWU2c6TcN22kJz3hzsx4gY2BD/H0Y5dSSpXHVcr3o52Prti9iV1nRyf1s/0o5Vid1Q5boe9K4GzwEMLq1QFfuGlzdN1IPeCm7fgrThintxvjuuPaGkS3/gdOVzTDqQ43yNLW28aS4UCOOxJOOZJwWE+D0PWKqxeceuJc0hw3gOtJOuhjl7u5k8w2wXEwJytZGTfd/cK4GtJlXAcuSxdyvyruINwwsQW4dX8DTu2CrQk3zBClJlzfcO8JB+ls0o6rCRdinz3ymUexZQ/G4D2DIuEUx5644pZIZ/PpnrjghHHsCTuAr7JT4awNA+ZSfQ8DiuPgiSvOhSwu3Y6rCddIOhqkKGb2lEhhgzbGdX8KPQJ3POvMHMXnisY4Hf+z4fqOq3bwkcuMMO5N4Im7RPw9xTWbPmhPtXE67i7wRH2Cq7FMzTguOHdAKLZ2qEI+ESrthjsCF5MU/ZVwEfs7ruEkqCJX3LKHcSrdCsD+LIoJN850H1w8X9bOIpxZDTvsOCGcjxPOPJFwX9rbcFGLDSfCebliY6CQMq5HjVxL7447CBcmaZobrvlr4Cix/oIju2+E87fATM6Es7Hv3FbaY9ISc1CiJRz7fcPVf+L4k2bfR9phpZz2449CcTGi9S9wvTFuGaze2nFh16QSFzihnwTDfZgNrxm3/1FY+UBVQTioWhQoOIxXlRE4CZwasE7y7mcS/MV9O27gF7Am3NhwEtaFRBpTyboOY5pN7CXhqKJONUMfw4H2ReCWvoiB+wHEA5+Zzfd8FwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>

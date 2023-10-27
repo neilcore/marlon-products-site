@@ -1,0 +1,34 @@
+
+.showcasing{
+    flex: 50%;
+    padding: 100px 170px 100px 170px;
+}
+
+#learn-more-catchphrase h1 {
+    font-size: 55px;
+    font-family: Manrope-Bold;
+    line-height: 1.3;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .third-section {
+        height: 100%;
+    }
+    #learn-more-catchphrase h1 {
+        /* height: 100%; */
+        font-size: 40px;
+    }
+    #arrow-grid {
+        display: none;
+    }
+    .showcasing {
+        flex: 100%;
+        padding: 75px 13px 0px 13px;
+    }
+
+    .showcasing ul {
+        padding: 0px 0px 10px 0px;
+    }
+}

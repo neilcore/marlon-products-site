@@ -1,0 +1,63 @@
+
+.fifth-section-main {
+    height: 700px;
+}
+
+#fifth-section-title {
+    padding-top: 11%;
+}
+
+#fifth-section-title p {
+    font-family: Manrope-Medium;
+    font-size: 33px;
+}
+
+.fifth-section-brands {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.fifth-section-brands div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifth-section-mobile-view {
+    display: none;
+}
+
+
+/* .fifth-section-brand .fifth-section-brands-brand .fifth-section-brands-marlon-brand-center {
+    width: 450px;
+    height: 450px;
+} */
+
+@media screen and (max-width: 480px) {
+
+    .fifth-section-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fifth-section-title p {
+        font-size: 25px;
+    }
+
+    .fifth-section-brands {
+        display:none;
+    }
+
+    .fifth-section-mobile-view {
+        display: block;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+}

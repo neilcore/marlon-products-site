@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279 79" width="279" height="79">
+	<title>marlon-logo</title>
+	<defs>
+		<image  width="276" height="47" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARQAAAAvAQMAAAAYdKfgAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TAP9bkSK1AAACEElEQVR4nH3VTY7jIBAFYKwsvOQIHIWjgdSLuZZHvehrOMoiy/bsaImm5r0CHJw/R04AfzYYiooxr44Q9+JJiplEWOApK2ob2q1kY7xEg9pu5mqkGc+2IHFq5sS6xT0zzHLCs4xhCWahQfPRbGr4xG00PI1rJqmxLMGsb4xDKY/GYkwY5KImq8GQ0Rhke2PCnYmOJjRT1AgP03reDaePIy0z8HQwaI7+hYmt526mg8H0XI8mVLNxHoOaWQe8tNHBLAFTcWrGN5P4ooORB2NRcbwgo5kPfVm98hem1ljM/E241Ujh4jq9QvMHJXc00g0X73wzFxpXmslvTObXzZhmvqq5shufQzWJxj836dFwzNdqasilULSyqSk0n/KNT9yNdLNyLN1cubKodYN2Rt/y3OC1J8nNxG4szOXeiBrz3GRuquzU5N04+dC3pwny+2jk3vzIhqByDAwpu/FcB3beja0mcwJKTRiBcaEm5CD/1DB4aHzbbBo7YTCuG2kGm7iM5kwjFi19AhyXjaamITTD+N3Eahglo/mU1dfes6vGduMGE2hWGt5a1KS5pwKYD1lRHA2Tg0aJphSstxrusJUj5SOrWW/GYZ+d1Wy7YTqUBWYeTapmlo1G80YcDO663BnNUWY0jLiNuZsmhZrldF/G0818qUlMWynUANHtj4dnGptp1qOZRfcMGvPLfx3DPtrxH0RZ7W7RPzY9AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="1" y="16"/>
+</svg>
