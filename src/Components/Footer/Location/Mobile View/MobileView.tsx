@@ -7,7 +7,6 @@ function MobileView() {
   return (
     <>
       <div className='location-map-mobile-view'>
-        {/* fshepfhjspdofjhopsdhfpsdf bg-red-600 */}
         <MapView />
         <LocationView />
         <div className='office-hours-phone'>

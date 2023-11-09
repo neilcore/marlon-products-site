@@ -7,8 +7,7 @@ import LocationSection from "./Location/LocationSection"
 const FooterView = () => {
   return (
     <>
-      <div className='footer-main bh-white'>
-        {/* bg-yellow-400 */}
+      <div className='footer-main bg-white'>
         <LocationSection/>
       </div>
     </>

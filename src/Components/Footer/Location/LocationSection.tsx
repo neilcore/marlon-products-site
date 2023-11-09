@@ -94,8 +94,8 @@ const LocationSection = () => {
       </div>
 
       {/* for mobile view */}
-        <MobileView/>
-        <MobileViewCertifications/>
+        {/* <MobileView/> */}
+        {/* <MobileViewCertifications/> */}
       {/* for mobile view */}
 
       <Certifications/>
