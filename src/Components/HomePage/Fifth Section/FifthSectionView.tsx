@@ -12,67 +12,32 @@ import shore_master from "../../../assets/images/logo/ShoreMaster-Blue-Logo 1.jp
 const FifthSectionView = () => {
   return (
     <>
-      <div className="fifth-section-main">
-        {/* bg-yellow-500 */}
-        <div id="fifth-section-title" className="text-center">
-          {/* bg-violet-400 */}
-          <p>The brands we worked with.</p>
-        </div>
-
-        <div className="fifth-section-brands">
-          {/* bg-stone-300 */}
-          <div className="fifth-section-brands-brand">
-            {/* <img src={brand5} alt="" width={150} height={150} /> */}
-            <img src={super_clamp} width={150} height={150} alt="" />
+      <section className="h-full px-3.5 pt-10 pb-20">
+        <h1 className="text-center font-manropemedium text-[25px] pt-16 pb-14 sm:text-[30px] md:text-[35px]">The brands we worked with.</h1>
+        <div className="grid gap-y-12 lg:flex lg:flex-row lg:justify-between">
+          <div className="lg:flex lg:justify-center lg:items-center">
+            <img src={super_clamp} width={150} height={150} alt="" className="text-center mr-auto ml-auto" />
           </div>
-          <div className="fifth-section-brands-brand">
-            {/* <img src={karavan} alt="" width={230} height={230} /> */}
-            <img src={karavan_logo} width={230} height={230} alt="" />
+          <div className="lg:flex lg:justify-center lg:items-center">
+            <img src={karavan_logo} width={230} height={230} alt="" className="text-center mr-auto ml-auto" />
           </div>
-          <div className="fifth-section-brands-brand">
+          <div className="lg:flex lg:justify-center lg:items-center">
             <img
               src={marlonLOGOBLACK}
               alt=""
-              className="fifth-section-brands-marlon-brand-center"
+              className="text-center mr-auto ml-auto"
               height={450}
               width={450}
             />
           </div>
-          <div className="fifth-section-brands-brand">
-            {/* <img src={brand5} alt="" width={230} height={230} /> */}
-            <img src={high_field} width={230} height={230} alt="" />
+          <div className="lg:flex lg:justify-center lg:items-center">
+            <img src={high_field} width={230} height={230} alt="" className="text-center mr-auto ml-auto" />
           </div>
-          <div className="fifth-section-brands-brand">
-            {/* <img src={brand3} alt="" width={150} height={150} /> */}
-            <img src={shore_master} width={150} height={150} alt="" />
+          <div className="lg:flex lg:justify-center lg:items-center">
+            <img src={shore_master} width={150} height={150} alt="" className="text-center mr-auto ml-auto" />
           </div>
         </div>
-
-        {/* for mobile view ==== display: none by default */}
-        <div className="fifth-section-mobile-view">
-          {/* <div>
-                <img src={marlonLOGOBLACK} alt="" height={260} width={260} />
-            </div> */}
-          <div style={{ marginBottom: "30px" }}>
-            <img src={super_clamp} alt="" height={150} width={150} />
-          </div>
-          <div>
-            {/* <img src={karavan} alt="" height={260} width={260} /> */}
-            <img src={karavan} alt="" height={200} width={200} />
-          </div>
-          <div>
-            <img src={marlonLOGOBLACK} alt="" height={260} width={260} />
-          </div>
-          <div>
-            {/* <img src={brand5} alt="" height={260} width={260} /> */}
-            <img src={high_field} alt="" height={200} width={200} />
-          </div>
-          <div style={{ marginBottom: "30px" }}>
-            {/* <img src={brand3} alt="" height={260} width={260} /> */}
-            <img src={shore_master} alt="" height={150} width={150} />
-          </div>
-        </div>
-      </div>
+      </section>
     </>
   );
 };
