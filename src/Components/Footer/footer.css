@@ -313,6 +313,14 @@
     display: none;
 }
 
+/* ::placeholder{
+    color: blue;
+} */
+
+::-ms-input-placeholder { /* Edge 12-18 */
+    color: red;
+}
+
 
 
 

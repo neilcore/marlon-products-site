@@ -10,6 +10,8 @@ import youtube_icon from "../../../../assets/images/icons/social-media/white ico
 import linkedin_icon from "../../../../assets/images/icons/social-media/white icons/icon _linkedin_.svg";
 import icon_tiktok from "../../../../assets/images/icons/social-media/white icons/icon _tiktok_.svg";
 
+import CertificationIcons from "../../../../assets/images/icons/Certification Icons.svg"
+
 const MobileViewCertifications = () => {
   return (
     <>
@@ -53,7 +55,8 @@ const MobileViewCertifications = () => {
                 <h2 style={{"fontFamily": "Opensans-Bold", "color": "#bbbbbb", "fontSize": "30px", "marginBottom": "20px"}} className='text-start'>
                     Our Certifications
                 </h2>
-                <h2 className='text-start' style={{"marginBottom": "35px"}}>CERTIFICATES HERE</h2>
+                {/* <h2 className='text-start' style={{"marginBottom": "35px"}}>CERTIFICATES HERE</h2> */}
+                <img src={CertificationIcons} alt="marlon-certifications" width={250} height={250} style={{"marginBottom": "35px"}} />
                 <hr style={{"border": "1px solid white", "marginBottom": "35px"}} />
                 <div className='flex flex-row flex-start' style={{"marginBottom": "100px"}}>
                     <div style={{"marginRight": "17px"}}>

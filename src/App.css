@@ -41,8 +41,7 @@
 
 @font-face {
   font-family: 'OpenSans-Regular';
-  src: local('OpenSans-Regular'),
-       url('./assets/fonts/Open Sans/OpenSans-Regular.ttf');
+  src: url('./assets/fonts/Open Sans/OpenSans-Regular.ttf');
 }
 
 @font-face {

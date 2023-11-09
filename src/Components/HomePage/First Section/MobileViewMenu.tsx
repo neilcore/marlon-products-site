@@ -2,6 +2,7 @@ import React from "react";
 
 import menuicon from "../../../assets/images/icons/menuicon.png";
 import rectangle1 from "../../../assets/images/icons/rectangle1.svg";
+import Group1 from "../../../assets/images/icons/menu icons/Group 1.svg"
 
 const MobileViewMenu = () => {
   return (
@@ -18,7 +19,7 @@ const MobileViewMenu = () => {
             />
             <p className="inline mr-1 text-white">MENU</p>
             <img
-              src={menuicon}
+              src={Group1}
               alt=""
               width={20}
               height={20}

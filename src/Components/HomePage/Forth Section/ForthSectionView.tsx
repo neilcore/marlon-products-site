@@ -8,7 +8,7 @@ import CustomerReview from "./CustomerReview"
 const ForthSectionView = () => {
   return (
     <>
-      <div className="main">
+      <div className="main relative px-3.5 py-10 lg:px-16 lg:py-24 xl:px-24 xl:py-40">
         <SellingProducts/>
         <CustomerReview/>
       </div>

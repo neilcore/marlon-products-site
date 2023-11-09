@@ -8,6 +8,7 @@ import youtube_icon from "../../../assets/images/icons/social-media/white icons/
 import linkedin_icon from "../../../assets/images/icons/social-media/white icons/icon _linkedin_.svg";
 import icon_tiktok from "../../../assets/images/icons/social-media/white icons/icon _tiktok_.svg";
 import nextArrow from "../../../assets/images/icons/nextArrow.png"
+import CertificationIcons from "../../../assets/images/icons/Certification Icons.svg"
 
 const Certifications = () => {
   return (
@@ -25,16 +26,16 @@ const Certifications = () => {
                     {/* className="certificate-social-media-icons" */}
                   <img src={marlonlogowhite} alt="" />
                   <h3>Our Certifications</h3>
-                  <p>CERTIFICATIONS HERE</p>
+                  <img src={CertificationIcons} alt="marlon-certifications" width={250} height={250} style={{"marginBottom": "20%"}} />
                 </div>
                 <div className="inline-social-media-icons"> 
                 {/* bg-sky-200 */}
-                    <a href="#" title="Instagram"><img src={instagram_icon} alt="" style={{"color": "white"}} /></a>
-                    <a href="#" title="Facebook"><img src={facebook_icon} alt="" /></a>
-                    <a href="#" title="Threads"><img src={threads} alt="" /></a>
-                    <a href="#" title="Youtube"><img src={youtube_icon} alt="" /></a>
-                    <a href="#" title="LinkedIn"><img src={linkedin_icon} alt="" /></a>
-                    <a href="#" title="Tiktok"><img src={icon_tiktok} alt="" /></a>
+                    <a href="#" title="Instagram"><img src={instagram_icon} alt="instagram-icon" /></a>
+                    <a href="#" title="Facebook"><img src={facebook_icon} alt="facebook-icon" /></a>
+                    <a href="#" title="Threads"><img src={threads} alt="threads-icon" /></a>
+                    <a href="#" title="Youtube"><img src={youtube_icon} alt="youtube-icon" /></a>
+                    <a href="#" title="LinkedIn"><img src={linkedin_icon} alt="linkedin-icon" /></a>
+                    <a href="#" title="Tiktok"><img src={icon_tiktok} alt="tiktok-icon" /></a>
                 </div>
               </div>
 

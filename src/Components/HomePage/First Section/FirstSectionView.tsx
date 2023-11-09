@@ -11,12 +11,18 @@ import menuicon from "../../../assets/images/icons/menuicon.png";
 import rectangle1 from "../../../assets/images/icons/rectangle1.svg";
 import Vector from "../../../assets/images/icons/Vector.svg";
 
+import icon_magnifying_glass from "../../../assets/images/icons/menu icons/icon _magnifying glass_.svg"
+import icon_User_ from "../../../assets/images/icons/menu icons/icon _User_.svg"
+import Group1 from "../../../assets/images/icons/menu icons/Group 1.svg"
+import icon_Location_ from "../../../assets/images/icons/menu icons/icon _Location_.svg" 
+
 import MobileViewMenu from "./MobileViewMenu"
+import MenuContainer from "../../Menu/MenuContainer"
 
 const FirstSectionView = () => {
   return (
     <>
-      <div className="relative h-screen">
+      <section className="relative h-screen">
         <video
           src={video1}
           autoPlay
@@ -25,130 +31,34 @@ const FirstSectionView = () => {
           className="absolute top-0 left-0 w-full h-full object-cover"
           style={{ zIndex: -1 }}
         ></video>
-        <div
-          className="first-section relative flex flex-col justify-between h-screen"
-          // p-12
-          style={{ zIndex: 2 }}
-        >
-          <div
-            className="w-full flex justify-between"
-            id="head-section-menu-computer-view"
-          >
-            <div id="marlon-logo-div">
-              <img
-                src={marlonlogowhite}
-                alt="MARLON-RECREATIONAL-PRODUCTS-LOGO"
-              />
-            </div>
 
-            <div>
-              <ul className="list-none m-0 p-0 overflow-hidden">
-                <li className="float-left" id="search-icon">
-                  <a
-                    href="#"
-                    className="block text-center text-black p-4 no-underline"
-                  >
-                    <img src={searchicon} alt="" width={22} height={22} />
-                  </a>
-                </li>
-                <li className="float-left" id="location-icon">
-                  <a
-                    href="#"
-                    className="block text-center text-black p-4 no-underline"
-                  >
-                    <img src={locationicon} alt="" width={22} height={22} />
-                  </a>
-                </li>
-                <li className="float-left" id="user-icon">
-                  <a
-                    href="#"
-                    className="block text-center text-black p-4 no-underline"
-                  >
-                    <img src={usericon} alt="" width={22} height={22} />
-                  </a>
-                </li>
-                <li className="float-left" id="menu-icon">
-                  <a
-                    href="#"
-                    className="block text-center text-black p-4 no-underline flex align-center"
-                  >
-                    <img
-                      src={rectangle1}
-                      alt=""
-                      width={22}
-                      height={22}
-                      className="inline mr-3.5"
-                    />
-                    <p
-                      className="inline mr-3.5 text-white"
-                      style={{ fontFamily: "Manrope-Regular" }}
-                    >
-                      MENU
-                    </p>
-                    <img
-                      src={menuicon}
-                      alt=""
-                      width={22}
-                      height={22}
-                      className="inline mr-0"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* intended for mobile view screen upper menu */}
-          <MobileViewMenu/>
-          {/* intended for mobile view screen upper menu */}
-
-          <div className="text-center" id="first-section-middle-title">
-            {/* bg-red-200 */}
-            <h1 className="text-white">
-              North America's best manufacturer of <br />
+        <div className="h-screen relative z-2 flex flex-col justify-between py-9 px-7 xl:px-16">
+          <MenuContainer/>
+          <div id="title">
+            <h1 className="text-start text-white font-manropelight text-[27px] sm:text-[33px] md:text-[35px] lg:text-[43px] xl:text-[55px] xl:text-center laptopL:text-center hybridL:text-[65px]">
+              North America's <br /> best manufacturer of <br />
             </h1>
-            <ul className="list-none m-0 p-0 overflow-hidden">
-              {/* style={{"marginLeft": "51%"}} */}
-              <li className="float-left text-white text-right">
-                {/* style={{"fontSize": "55px"}} */}
-                <img
-                  id="first-section-middle-title-rectangle-img"
-                  src={rectangle1}
-                  alt=""
-                  className="inline"
-                />
-                {/* mr-3.5 */}
-              </li>
-              <li
-                className="float-left text-white text-right"
-                style={{ fontFamily: "Manrope-Bold" }}
-              >
-                Boating Products.
-              </li>
-            </ul>
+            <div className="flex items-center mmobile:justify-end">
+              <div><img src={rectangle1} alt="" className="w-5 h-5 mr-1 xl:w-10 xl:h-10 hybridL:w-12 hybridL:h-12"/></div>
+              <div>
+                <h1
+                  className="text-white font-manropebold text-[27px] sm:text-[33px] md:text-[35px] lg:text-[43px] lg:mr-40 xl:text-[55px] xl:mr-0 laptopL:mr-14 2xl:mr-60 hybridL:mr-72 hybridL:text-[65px]"
+                >
+                  Boating Products.
+                </h1>
+              </div>
+            </div>
           </div>
-
-          <div className="w-full">
-            <img
-              src={Vector}
-              alt="arrow-down"
-              id="head-section-menu-arrow-down"
-            />
+          <div>
+            <img src={Vector} alt="arrow-down" className="w-[50px] h-[50px] xl:ml-8"/>
           </div>
         </div>
 
-        <div
-          className="polygon-top-right absolute top-0 right-0 w-2/4 h-3/4 opacity-90"
-          style={{
-            zIndex: 1,
-          }}
-        ></div>
-        <div
-          className="polygon-bottom-left absolute bottom-0 left-0 w-1/2 h-2/4 opacity-80"
-          style={{ zIndex: 1 }}
-        ></div>
+        <div className="polygon-top-right absolute top-0 right-0 w-2/4 h-3/4 bg-[#414244] opacity-90 z-1"></div>
+        {/* w-2/4 h-3/4 */}
+        <div className="polygon-bottom-left absolute bottom-0 left-0 w-1/2 h-2/4 bg-white opacity-80 z-1"></div>
         
-      </div>
+      </section>
     </>
   );
 };

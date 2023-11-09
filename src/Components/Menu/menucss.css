@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) {
+    #menu {
+        margin-bottom: 8%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    /* #menu #marlon-logo { display: none; } */
+    #menu div ul #search-icon, #location-icon, #user-icon { display: none; }
+}
+
+@media screen and (max-width: 428px) {
+    #menu { justify-content: flex-end; }
+    #menu #marlon-logo { display: none; }
+    #menu div ul #search-icon, #location-icon, #user-icon { display: none; }
+}

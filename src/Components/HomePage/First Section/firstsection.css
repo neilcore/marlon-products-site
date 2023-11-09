@@ -1,98 +1,44 @@
-.first-section {
-    padding: 48px;
-}
-
-.polygon-top-right {
-    clip-path: polygon(51% 0, 100% 57%, 100% 0);
-    background-color: #414244;
-}
+.polygon-top-right { clip-path: polygon(100% 0, 8% 0, 100% 31%); }
 
 .polygon-bottom-left {
-    /* clip-path: polygon(0 35%, 0% 100%, 50% 100%); */
-    clip-path: polygon(0 26%, 0% 100%, 50% 100%);
-    background-color: white;
+    /* clip-path: polygon(63% 100%, 0 47%, 0 100%); */
+    clip-path: polygon(98% 100%, 0 47%, 0 100%);
 }
 
-#head-section-menu-mobile-view {
-    display: none;
-}
-
-#first-section-middle-title h1 {
-    font-size: 55px;
-    font-family: Manrope-Light;
-}
-
-#first-section-middle-title ul {
-    margin-left: 51%;
-}
-
-#first-section-middle-title-rectangle-img{
-    margin-right: 14px;
-}
-
-#first-section-middle-title ul li {
-    font-size: 55px;
-}
-
-#head-section-menu-arrow-down {
-    width: 55px;
-    height: 55px;
-    margin-left: 50px;
-}
-
-/* #first-section-middle-title ul li #first-section-middle-title-rectangle-img {
-    font-size: 55px;
-} */
-
-@media screen and (max-width: 480px) {
-    
-    .first-section {
-        padding: 45px;
-        padding-top: 15px;
-    }
-
-    .polygon-top-right{
-        /* clip-path: polygon(35% 0, 100% 29%, 100% 0); */
-        clip-path: polygon(25% 0, 100% 29%, 100% 0);
-        background-color: #414244;
-    }
-
-    .polygon-bottom-left {
-        clip-path: polygon(0 44%, 0% 100%, 90% 100%);
-        background-color: white;
-    }
-
-    #head-section-menu-computer-view {
+@media screen and (min-width: 640px){
+    #title h1 br {
         display: none;
     }
-    #head-section-menu-mobile-view {
-        display: block;
+}
+
+@media screen and (min-width: 768px){
+    #title h1 br {
+        display: none;
     }
 
-    #first-section-middle-title h1 {
-        font-size: 28px;
-        text-align: left;
-        font-family: Manrope-Light;
+    .polygon-top-right { clip-path: polygon(100% 56%, 100% 0, 25% 0); }
+    .polygon-bottom-left {
+        /* clip-path: polygon(0 100%, 59% 100%, 0 44%); */
+        /* clip-path: polygon(0 100%, 59% 100%, 0 32%); */
+        clip-path: polygon(0 100%, 66% 100%, 0 32%);
+    }
+}
+
+
+@media screen and (min-width: 1280px){
+
+    /* .polygon-top-right { clip-path: polygon(100% 56%, 100% 0, 25% 0); } */
+    .polygon-bottom-left {
+        clip-path: polygon(0 100%, 56% 100%, 0 25%);
+    }
+}
+
+@media screen and (min-width: 1490px){
+
+    .polygon-top-right {
+        /* clip-path: polygon(52% 0, 100% 78%, 100% 0); */
+        clip-path: polygon(42% 0, 100% 78%, 100% 0);
     }
 
-    #first-section-middle-title-rectangle-img{
-        width: 25px;
-        height: 25px;
-        margin-right: 8px;
-    }
-
-    #first-section-middle-title ul {
-        margin-left: 0;
-    }
-
-    #first-section-middle-title ul li {
-        font-size: 29px;
-    }
-
-    #head-section-menu-arrow-down {
-        width: 50px;
-        height: 50px;
-        margin-left: 0px;
-    }
-
+    .polygon-bottom-left { clip-path: polygon(0 31%, 0 100%, 46% 100%); }
 }

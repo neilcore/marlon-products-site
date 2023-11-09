@@ -11,18 +11,13 @@ import icon_tiktok from "../../../assets/images/icons/social-media/icon _tiktok_
 const SocialMediaSideBar = () => {
   return (
     <>
-      <div
-        style={{
-          borderRadius: "0px 15px 15px 0px",
-          backgroundColor: "#ececec",
-        }}
-        className="home-page-section-2-sm-sidebar-fixed"
-      >
+      <div className="bg-[#ececec] w-16 mt-48" style={{"borderRadius": "0px 15px 15px 0px"}}>
         <a href="#" title="Instagram">
           <img
             src={instagram_icon}
             alt="instagram-icon"
             id="sidebar-social-media-icons"
+            className="block text-center p-4 text-[#848484] w-[60px] h-[60px]"
           />
         </a>
         <a href="#" title="Facebook">
@@ -30,6 +25,7 @@ const SocialMediaSideBar = () => {
             src={facebook_icon}
             alt="facebook-icon"
             id="sidebar-social-media-icons"
+            className="block text-center p-4 text-[#848484] w-[60px] h-[60px]"
           />
         </a>
         <a href="#" title="LinkedIn">
@@ -37,6 +33,7 @@ const SocialMediaSideBar = () => {
             src={linkedin_icon}
             alt="linkedin-icon"
             id="sidebar-social-media-icons"
+            className="block text-center p-4 text-[#848484] w-[60px] h-[60px]"
           />
         </a>
         <a href="#" title="Tiktok">
@@ -44,6 +41,7 @@ const SocialMediaSideBar = () => {
             src={icon_tiktok}
             alt="tiktok-icon"
             id="sidebar-social-media-icons"
+            className="block text-center p-4 text-[#848484] w-[60px] h-[60px]"
           />
         </a>
         <a href="#" title="Threads">
@@ -51,6 +49,7 @@ const SocialMediaSideBar = () => {
             src={threads}
             alt="threads-icon"
             id="sidebar-social-media-icons"
+            className="block text-center p-4 text-[#848484] w-[60px] h-[60px]"
           />
         </a>
         <a href="#" title="Youtube">
@@ -58,6 +57,7 @@ const SocialMediaSideBar = () => {
             src={youtube_icon}
             alt="youtube-icon"
             id="sidebar-social-media-icons"
+            className="block text-center p-4 text-[#848484] w-[60px] h-[60px]"
           />
         </a>
       </div>

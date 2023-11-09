@@ -7,118 +7,50 @@ import Boats from "../../../assets/images/products/Boats.jpg"
 
 const MainPage = () => {
   return (
-    <>
-      <div id="title-and-description" style={{ marginBottom: "90px" }}>
-        <div style={{ flex: "50%" }} id="title-and-description-catchphrase">
-          <h1 className="text-7xl" style={{ fontFamily: "Manrope-Bold" }}>
-            We've got you covered.
-          </h1>
-        </div>
-        <div style={{ flex: "50%" }}>
-          <p style={{ fontFamily: "Manrope-Medium" }}>
-            Our boats, trailers, docks, hoists, truck decks and accessories are{" "}
-            <br />
-            engineered to work hard and play harder, just like we do. We
-            constantly <br />
-            update our products based on your feedback, and are always
-            innovating <br />
-            new ways to make the good life, well, better and sustainable.
-          </p>
-        </div>
+    <section className="grid gap-y-9">
+      {/* text section */}
+      <div className="grid gap-4 lg:grid-cols-2 lg:pb-11">
+        <h1 className="text-start font-manropebold text-[39px] leading-tight sm:text-[45px] lg:text-[55px] xl:text-[66px]">We've got you covered.</h1>
+        <p className="text-start font-manropemedium text-[19px] lg:text-[25px]"> 
+          Our boats, trailers, docks, hoists, truck decks and accessories are
+          engineered to work hard and play harder, just like we do. We
+          constantly update our products based on your feedback, and are always innovating
+          new ways to make the good life, well, better and sustainable.
+        </p>
       </div>
 
-      <div className="title-and-description-service">
-        <div
-          className="service-preview relative"
-          style={{ flex: "25%", height: "450px" }}
-        >
-          <img
-            src={Trailers}
-            alt="trailers"
-            style={{ borderRadius: "12px", height: "450px" }}
-          />
 
-          <div
-            style={{
-              lineHeight: "90%",
-              fontSize: "45px",
-              fontFamily: "Manrope-Bold",
-            }}
-            className="absolute bottom-7 left-0 p-2 ml-5 text-white"
-          >
-            Products <br />
-            <span style={{ fontSize: "23px" }}>See More</span>
+      <div className="grid gap-y-8 mmobile:gap-y-11 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-4 lg:gap-x-4 xl:grid-cols-4">
+        <div className="relative h-auto">
+          <img src={Trailers} alt="" className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]" />
+          <div className="absolute bottom-3 left-0 p-2 ml-5">
+            <h1 className="font-manropebold text-white text-[29px] mmobile:text-[35px]">Products</h1>
+            <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span>
           </div>
         </div>
-        <div
-          className="service-preview relative"
-          style={{ flex: "25%", height: "450px" }}
-        >
-          <img
-            src={docks_hoist}
-            alt="trailers"
-            style={{ borderRadius: "12px", height: "450px" }}
-          />
-
-          <div
-            style={{
-              lineHeight: "90%",
-              fontSize: "45px",
-              fontFamily: "Manrope-Bold",
-            }}
-            className="absolute bottom-7 left-0 p-2 ml-5 text-white"
-          >
-            Find a Dealer <br />
-            <span style={{ fontSize: "23px" }}>See More</span>
+        <div className="relative h-auto">
+          <img src={docks_hoist} alt="" className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]" />
+          <div className="absolute bottom-3 left-0 p-2 ml-5">
+            <h1 className="font-manropebold text-white text-[29px] mmobile:text-[35px]">Find A Dealer</h1>
+            <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span>
           </div>
         </div>
-        <div
-          className="service-preview relative"
-          style={{ flex: "25%", height: "450px" }}
-        >
-          <img
-            src={trucks_decks}
-            alt="trailers"
-            style={{ borderRadius: "12px", height: "450px" }}
-          />
-
-          <div
-            style={{
-              lineHeight: "90%",
-              fontSize: "45px",
-              fontFamily: "Manrope-Bold",
-            }}
-            className="absolute bottom-7 left-0 p-2 ml-5 text-white"
-          >
-            Become a <br />
-            Dealer <br />
-            <span style={{ fontSize: "23px" }}>See More</span>
+        <div className="relative h-auto">
+          <img src={trucks_decks} alt="" className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]" />
+          <div className="absolute bottom-3 left-0 p-2 ml-5">
+            <h1 className="font-manropebold text-white text-[29px] mmobile:text-[35px]">Become a Dealer</h1>
+            <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span>
           </div>
         </div>
-        <div
-          className="service-preview relative"
-          style={{ flex: "25%", height: "450px" }}
-        >
-          <img
-            src={Boats}
-            alt="trailers"
-            style={{ borderRadius: "12px", height: "450px" }}
-          />
-
-          <div
-            style={{
-              lineHeight: "90%",
-              fontSize: "45px",
-              fontFamily: "Manrope-Bold",
-            }}
-            className="absolute bottom-7 left-0 p-2 ml-5 text-white"
-          >
-            Marlon Gear <br />
-            <span style={{ fontSize: "23px" }}>See More</span>
+        <div className="relative h-auto">
+          <img src={Boats} alt="" className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]" />
+          <div className="absolute bottom-3 left-0 p-2 ml-5">
+            <h1 className="font-manropebold text-white text-[29px] mmobile:text-[35px]">Marlon Gear</h1>
+            <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

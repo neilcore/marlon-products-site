@@ -8,67 +8,35 @@ import VectorUp from "../../../assets/images/icons/VectorUp.png";
 const ThirdSectionView = () => {
   return (
     <>
-      <div
-        className="third-section flex"
-        style={{ backgroundColor: "#ececec" }}
-      >
-        <div
-          style={{ width: "90px", paddingTop: "10%", paddingLeft: "8px" }}
-          id="arrow-grid"
-        >
+      <div className="third-section flex bg-[#ececec] h-full">
+        <div className="hidden md:block md:w-[90px] md:pt-[10%] md:pl-2">
           <a href="#">
-            <img
-              src={VectorUp}
-              alt=""
-              width={40}
-              height={40}
-              style={{ color: "#848484" }}
+            <img src={VectorUp} alt="arrow-up" width={40} height={40}
             />
           </a>
         </div>
-        <div
-          className="showcasing"
-        >
-          <ul className="text-center" style={{ marginBottom: "70px" }}>
-            <li className="inline-block" style={{ marginRight: "15px" }}>
+        <div className="w-full py-12 px-3.5 md:py-20">
+          <ul className="text-center mb-[40px]">
+            <li className="inline-block mr-[15px]">
               <img src={Rectangle2} alt="" width={17} height={17} />
             </li>
             <li className="inline-block">
-              <p
-                style={{
-                  fontSize: "20px",
-                  fontFamily: "OpenSans-ExtraBold",
-                  letterSpacing: "3px",
-                }}
-              >
+              <p className="text-xl font-openextrabold tracking-[3px]">
                 WHO WE ARE
               </p>
             </li>
           </ul>
 
-          <div className="learn-more grid gap-4 grid-cols-1 grid-rows-2 text-center">
-            <div id="learn-more-catchphrase">
-              <h1>
+          <div className="grid gap-4 text-center">
+            <div>
+              <h1 className="text-[37px] font-manropebold leading-tight sm:text-[50px] lg:text-[60px]">
                 We build and represent quality products <br /> that make the
                 outdoors more fun.
               </h1>
             </div>
             <div>
-              {/* className="bg-red-400" */}
               <div className="mt-11">
-                <a
-                  href="#"
-                  className="text-white"
-                  style={{
-                    backgroundColor: "#3d3d3d",
-                    fontSize: "25px",
-                    borderRadius: "10px",
-                    padding: "20px 40px 20px 40px",
-                    marginTop: "90px",
-                  }}
-                >
-                  Learn More
-                </a>
+                <a href="#" className="text-white bg-[#3d3d3d] text-[25px] rounded-[10px] py-5 px-10 mt-[90px]" > Learn More </a>
               </div>
             </div>
           </div>

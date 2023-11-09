@@ -5,6 +5,7 @@ import './App.css'
 
 
 import HomePage from './Components/HomePage/HomePage'
+import ProductsContainer from "./Components/Products/ProductsContainer"
 
 
 
@@ -14,6 +15,7 @@ function App() {
     <>
       {/* <HomePage/> */}
       < HomePage />
+      {/* <ProductsContainer/> */}
     </>
   )
 }
