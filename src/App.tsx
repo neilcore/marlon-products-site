@@ -1,23 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
+import Routes from "./Routes/Routes"
 
-import HomePage from './Components/HomePage/HomePage'
-import ProductsContainer from "./Components/Products/ProductsContainer"
+import { RouterProvider } from 'react-router-dom'
 
 
 
 function App() {
+  const router = Routes();
 
-  return (
-    <>
-      {/* <HomePage/> */}
-      < HomePage />
-      {/* <ProductsContainer/> */}
-    </>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App

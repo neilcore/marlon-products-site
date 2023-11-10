@@ -1,8 +1,8 @@
 import React from 'react'
 import FooterView from "./FooterView"
 
-function FooterContainer() {
+function FooterMobileContainer() {
     return <FooterView/>
 }
 
-export default FooterContainer
+export default FooterMobileContainer

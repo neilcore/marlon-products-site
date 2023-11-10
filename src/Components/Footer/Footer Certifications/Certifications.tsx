@@ -16,12 +16,9 @@ const Certifications = () => {
       <div className="marlon-certifications-bottom">
         {/* bg-lime-200 */}
         <div className="flex-vertical">
-            {/* bg-cyan-200 */}
           <div>
             <div className="certifications-section">
-                {/* bg-indigo-300 */}
               <div className="certificate-social-media-icons text-start" id="left">
-                {/* bg-rose-950 */}
                 <div style={{ marginBottom: "50px" }}>
                     {/* className="certificate-social-media-icons" */}
                   <img src={marlonlogowhite} alt="" />
@@ -40,27 +37,18 @@ const Certifications = () => {
               </div>
 
               <div id="right">
-                {/* className="bg-purple-500" */}
                 <div>
-                    {/* className="bg-sky-700" */}
                     <h3>Our insights to your inbox</h3>
                     <div className="inbox-input-fields">
-                        {/* bg-teal-200 */}
-                        <div id="input-container" className="flex w-full" style={{"marginRight": "15px"}}>
-                            {/* bg-neutral-400 */}
-                            <input className="input-field w-full" type="text" placeholder="Name:" />
-                        </div>
-                        <div id="input-container" className="flex w-full" style={{"marginRight": "15px"}}>
-                            {/* bg-lime-300 */}
-                            <div id="input-container" className="flex w-full">
-                                {/* bg-neutral-400 */}
-                                <input className="input-field w-full" type="email" placeholder="Email:" />
-                            </div>
-                        </div>
-                        {/* <a href="#">
-                            <img src={nextArrow} alt="" />
-                        </a> */}
-                        <img src={nextArrow} alt="" />
+                      <div id="input-container" className="flex w-full" style={{"marginRight": "15px"}}>
+                        <input className="input-field w-full" type="text" placeholder="Name:" />
+                      </div>
+                      <div id="input-container" className="flex w-full" style={{"marginRight": "15px"}}>
+                          <div id="input-container" className="flex w-full">
+                            <input className="input-field w-full" type="email" placeholder="Email:" />
+                          </div>
+                      </div>
+                      <img src={nextArrow} alt="" />
                     </div>
                 </div>
               </div>

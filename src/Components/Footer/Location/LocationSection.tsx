@@ -10,9 +10,7 @@ const LocationSection = () => {
   return (
     <>
       <div id="footer-upper">
-        {/* className="bg-stone-500" */}
         <div className="footer-office-section">
-          {/* bg-stone-400 */}
           <div className="locations">
             <div id="our-locations">
               <h1>Our locations.</h1>

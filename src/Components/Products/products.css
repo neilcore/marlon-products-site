@@ -1,5 +1,5 @@
 .products-first-section {
-    height: 700px;
+    /* height: 700px; */
     background-image: url("../../assets/images/products/Our-Culture-Bottom-Left.jpg");
     background-position: center;
     background-size: cover;
@@ -54,7 +54,6 @@
     /* clip-path: polygon(100% 0, 37% 0, 100% 66%); */
     /* clip-path: polygon(100% 0, 37% 0, 100% 95%); */
     clip-path: polygon(100% 0, 37% 0, 100% 98%);
-    background-color: #414244;
 }
 
 

@@ -1,16 +1,16 @@
 import React from 'react'
-import footer_map from "../../assets/images/home page/Footer Map.png"
-import marlonlogowhite from "../../assets/images/logo/marlonlogowhite.png"
-import CertificationIcons from "../../assets/images/icons/Certification Icons.svg"
+import footer_map from "../../../assets/images/home page/Footer Map.png"
+import marlonlogowhite from "../../../assets/images/logo/marlonlogowhite.png"
+import CertificationIcons from "../../../assets/images/icons/Certification Icons.svg"
 
-import facebook_icon from "../../assets/images/icons/social-media/white icons/icon _Facebook F icon_.svg"
-import instagram_icon from "../../assets/images/icons/social-media/white icons/icon _instagram icon_.svg";
-import threads from "../../assets/images/icons/social-media/white icons/threads.svg";
-import youtube_icon from "../../assets/images/icons/social-media/white icons/icon _youtube icon_.svg";
-import linkedin_icon from "../../assets/images/icons/social-media/white icons/icon _linkedin_.svg";
-import icon_tiktok from "../../assets/images/icons/social-media/white icons/icon _tiktok_.svg";
+import facebook_icon from "../../../assets/images/icons/social-media/white icons/icon _Facebook F icon_.svg"
+import instagram_icon from "../../../assets/images/icons/social-media/white icons/icon _instagram icon_.svg";
+import threads from "../../../assets/images/icons/social-media/white icons/threads.svg";
+import youtube_icon from "../../../assets/images/icons/social-media/white icons/icon _youtube icon_.svg";
+import linkedin_icon from "../../../assets/images/icons/social-media/white icons/icon _linkedin_.svg";
+import icon_tiktok from "../../../assets/images/icons/social-media/white icons/icon _tiktok_.svg";
 
-import nextArrow from "../../assets/images/icons/nextArrow.png"
+import nextArrow from "../../../assets/images/icons/nextArrow.png"
 
 import "./footer.css"
 

@@ -7,6 +7,7 @@ import ForthSectionContainer from "./Forth Section/ForthSectionContainer"
 import FifthSectionContainer from "./Fifth Section/FifthSectionContainer"
 import SixContainer from "./Six Section/SixContainer"
 import FooterContainer from "../Footer/FooterContainer"
+import FooterMobileContainer from "../Footer/Mobile/FooterMobileContainer"
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <ForthSectionContainer/>
       <FifthSectionContainer/>
       <SixContainer/>
+      <FooterMobileContainer/>
       <FooterContainer/>
     </>
   )
