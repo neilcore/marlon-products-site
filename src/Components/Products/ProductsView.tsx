@@ -22,27 +22,18 @@ import off30truckdecks from "../../assets/images/products/Blog - 30 off Truck De
 import united_states from "../../assets/images/icons/flags/united-states.png";
 import canadaflagIcon from "../../assets/images/icons/flags/canada.png";
 
-import MenuView from "../Menu/MenuView";
-import MenuMobileView from "../Menu/MenuMobileView";
-
 import FooterContainer from "../Footer/FooterContainer";
 
-import MenuContainer from "../Menu/MenuContainer"
+import MenuContainer from "../Menu/MenuContainer";
+import FooterMobileContainer from "../Footer/Mobile/FooterMobileContainer";
 
 const ProductsView = () => {
   return (
     <>
       <section className="products-first-section h-screen relative">
-        {/* products-first-section */}
-
-        {/* <div id="products-computer-view-menu" className="relative">
-          <MenuView />
-        </div> */}
-        <MenuContainer/>
-
-        {/* <div id="products-mobile-view-menu">
-          <MenuMobileView />
-        </div> */}
+        <div className="relative z-2">
+          <MenuContainer />
+        </div>
 
         <div className="catchphrase-description">
           <ul className="list-none m-0 p-0 overflow-hidden">
@@ -64,82 +55,83 @@ const ProductsView = () => {
         <div className="polygon-top-right bg-[#414244] absolute top-0 right-0 w-2/4 h-3/4 opacity-90 z-1"></div>
       </section>
 
-      <div className="products-second-section">
-        {/* bg-red-200 */}
-        <div className="title-and-description">
-          {/* bg-red-400 */}
-          <div id="text-one">
-            <ul className="text-start">
-              <li className="inline-block" style={{ marginRight: "15px" }}>
-                <img src={Rectangle2} alt="" width={17} height={17} />
-              </li>
-              <li className="inline-block">
-                <p
-                  style={{
-                    fontSize: "17px",
-                    fontFamily: "OpenSans-ExtraBold",
-                    letterSpacing: "3px",
-                  }}
-                >
-                  PRODUCTS
-                </p>
-              </li>
-            </ul>
+      <section className="py-9 px-3 sm:px-8 sm:py-20 lg:px-16 lg:py-28 xl:px-24 xl:py-34">
+        <div className="grid gap-y-9">
+          <div className="grid gap-4 lg:grid-cols-2 lg:pb-11">
+            <h1 className="text-start font-manropebold text-[39px] leading-tight sm:text-[45px] lg:text-[55px] xl:text-[66px]">
+              Products designed to endure the elements.
+            </h1>
+            <p className="text-start font-manropemedium text-[19px] lg:text-[25px]">
+              We build and representquality products that make the outdoors more fun. 
+              Whether your kind of fun is on land or water, we ve got you covered. Our boats, 
+              trailers, docks, hoists, truck decks and accessories are engineered to last.
+            </p>
           </div>
-          <div id="text-two">
-            <div id="catchphrase">
-              <h1>
-                Products designed to <br />
-                endure the elements.
-              </h1>
+
+          <div className="grid gap-y-8 mmobile:gap-y-11 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-4 lg:gap-x-4 xl:grid-cols-4">
+            <div className="relative h-auto">
+              <img
+                src={Trailers}
+                alt=""
+                className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]"
+              />
+              <div className="absolute bottom-3 left-0 p-2 ml-5">
+                <h1 className="font-manropebold text-white text-[30px] sm:text-[35px] lg:text-[40px]">
+                  Trailers
+                </h1>
+                <span className="font-manropebold text-white text-[20px]">
+                  See More
+                </span>
+              </div>
             </div>
-            <div id="description">
-              <p style={{ marginTop: "10px" }}>
-                We build and representquality products that make the outdoors
-                more fun. <br />
-                Whether your kind of fun is on land or water, we ve got you
-                covered. Our boats, <br />
-                trailers, docks, hoists, truck decks and accessories are
-                engineered to last. <br />
-              </p>
+            <div className="relative h-auto">
+              <img
+                src={trucks_decks}
+                alt=""
+                className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]"
+              />
+              <div className="absolute bottom-3 left-0 p-2 ml-5">
+                <h1 className="font-manropebold text-white text-[30px] sm:text-[35px] lg:text-[40px]">
+                  Truck Decks
+                </h1>
+                <span className="font-manropebold text-white text-[20px]">
+                  See More
+                </span>
+              </div>
+            </div>
+            <div className="relative h-auto">
+              <img
+                src={Boats}
+                alt=""
+                className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]"
+              />
+              <div className="absolute bottom-3 left-0 p-2 ml-5">
+                <h1 className="font-manropebold text-white text-[30px] sm:text-[35px] lg:text-[40px]">
+                  Boats
+                </h1>
+                <span className="font-manropebold text-white text-[20px]">
+                  See More
+                </span>
+              </div>
+            </div>
+            <div className="relative h-auto">
+              <img
+                src={docks_hoist}
+                alt=""
+                className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]"
+              />
+              <div className="absolute bottom-3 left-0 p-2 ml-5">
+                <h1 className="font-manropebold text-white text-[30px] sm:text-[35px] lg:text-[40px]">
+                  Docks + Hoists
+                </h1>
+                <span className="font-manropebold text-white text-[20px]">
+                  See More
+                </span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="preview-images">
-          {/* bg-orange-100 */}
-          <div className="relative">
-            <img src={Trailers} alt="trailer" />
-            <div className="p-2 ml-5 text-white" id="text">
-              Products <br />
-              <span>See More</span>
-            </div>
-          </div>
-
-          <div className="relative">
-            <img src={trucks_decks} alt="trailer" />
-            <div className="p-2 ml-5 text-white" id="text">
-              Truck Decks <br />
-              <span>See More</span>
-            </div>
-          </div>
-
-          <div className="relative">
-            <img src={Boats} alt="trailer" />
-            <div className="p-2 ml-5 text-white" id="text">
-              Boats <br />
-              <span>See More</span>
-            </div>
-          </div>
-
-          <div className="relative">
-            <img src={docks_hoist} alt="trailer" />
-            <div className="p-2 ml-5 text-white" id="text">
-              Docks + Hoists <br />
-              <span>See More</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <div className="products-third-section">
         <div id="section-one">
@@ -227,77 +219,107 @@ const ProductsView = () => {
         </div>
       </div>
 
-      <div className="products-keep-up-to-date">
-        <div className="text">
-          <div className="mb-6">
-            <ul className="text-start">
-              <li className="inline-block" style={{ marginRight: "15px" }}>
-                <img src={Rectangle2} alt="" width={17} height={17} />
-              </li>
-              <li className="inline-block">
-                <p
-                  style={{
-                    fontSize: "17px",
-                    fontFamily: "OpenSans-ExtraBold",
-                    letterSpacing: "3px",
-                  }}
-                  className="text-white"
-                >
-                  KEEP UP-TO-DATE
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div className="catchphrase">
-            <h1 className="text-white">
-              The latest <br />
-              product <br />
-              news and <br />
-              updates. <br />
-            </h1>
-          </div>
-          <div className="mb-6" id="btn">
-            <a href="#" className="text-white">
+      <section
+        className="
+          products-keep-up-to-date
+          six-section h-full bg-cover bg-no-repeat bg-center px-3.5 py-12 flex flex-col
+          sm:px-8 sm:py-20 lg:px-16 lg:py-28 xl:flex-row xl:justify-between xl:px-24 xl:py-40
+        "
+      >
+        <div className="mb-11 xl:mr-14 xl:max-w-auto">
+          <ul className="text-start mb-7">
+            <li className="inline-block" style={{ marginRight: "15px" }}>
+              <img src={Rectangle2} alt="" width={17} height={17} />
+            </li>
+            <li className="inline-block">
+              <p className="text-white font-openextrabold tracking-[3px] text-[17px] md:text-[19px]">
+                KEEP UP-TO-DATE
+              </p>
+            </li>
+          </ul>
+
+          <h1
+            className="text-white text-[40px] font-manropebold mb-5 sm:text-[50px] sm:mb-7 md:text-[60px] md:mb-7 lg:hidden"
+            style={{ lineHeight: "1.1" }}
+          >
+            The latest product news and updates.
+          </h1>
+
+          <h1
+            className="hidden lg:block lg:text-white lg:font-manropebold lg:mb-10 lg:text-[75px] xl:text-[60px]"
+            style={{ lineHeight: "1.1" }}
+          >
+            The latest <br /> product <br /> news and updates.
+          </h1>
+
+          <div>
+            <a
+              href="#"
+              className="
+              shadow-md
+              bg-white text-[#3d3d3d] text-[18px] font-manroperegular inline-block py-2.5 px-8 rounded-xl
+              lg:py-4 lg:px-10
+              "
+            >
               View All
             </a>
           </div>
         </div>
-        <div className="preview-img">
-          <div id="img" className="bg-white">
+        <div className="grid gap-4 lg:grid-cols-2 xl:w-[75rem]">
+          <div className="bg-white rounded-2xl shadow-md">
             <div>
-              <img src={top10Docks} alt="" />
+              <img
+                src={top10Docks}
+                alt=""
+                className="w-full object-fill rounded-t-2xl"
+              />
             </div>
-            <div id="description">
-              <h2>Top 10 Affordable Docks</h2>
-              <p>
+            <div className="p-5 sm:p-8 md:p-10">
+              <h2 className="font-manropebold text-[27px] mb-5">
+                Top 10 Affordable Docks
+              </h2>
+              <p className="font-manropemedium text-[20px] mb-5 sm:mb-8">
                 Lorem ipsum dolor sit amet consectetur. Quisque scelerisque
                 turpis elit vitae in vulputate imperdiet. Iaculis nisl in in
                 dolor gravida. Duis quis laoreet quam suspendis.
               </p>
-              <a href="#" className="text-white">
+              <a
+                href="#"
+                className="text-white font-manropemedium text-center bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]"
+              >
                 Read More
               </a>
             </div>
           </div>
-          <div id="img" className="bg-white">
+          <div className="bg-white rounded-2xl shadow-md">
             <div>
-              <img src={off30truckdecks} alt="" />
+              <img
+                src={off30truckdecks}
+                alt=""
+                className="w-full object-fill rounded-t-2xl"
+              />
             </div>
-            <div id="description">
-              <h2>30% OFF Truck Decks!</h2>
-              <p>
+            <div className="p-5 sm:p-8 md:p-10">
+              <h2 className="font-manropebold text-[27px] mb-5">
+                30% Off Truck Decks
+              </h2>
+              <p className="font-manropemedium text-[20px] mb-5 sm:mb-8">
                 Lorem ipsum dolor sit amet consectetur. Quisque scelerisque
                 turpis elit vitae in vulputate imperdiet. Iaculis nisl in in
                 dolor gravida. Duis quis laoreet quam suspendis.
               </p>
-              <a href="#" className="text-white">
+              <a
+                href="#"
+                className="text-white font-manropemedium text-center bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]"
+              >
                 Read More
               </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
+      <FooterMobileContainer />
       <FooterContainer />
     </>
   );
