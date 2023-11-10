@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./fifthsection.css";
+// import "./fifthsection.css";
 
 import marlonLOGOBLACK from "../../../assets/images/logo/marlonLOGOBLACK.svg"
 import karavan from "../../../assets/images/logo/karavan.svg"
@@ -12,8 +12,9 @@ import shore_master from "../../../assets/images/logo/ShoreMaster-Blue-Logo 1.jp
 const FifthSectionView = () => {
   return (
     <>
-      <section className="h-full px-3.5 pt-10 pb-20">
-        <h1 className="text-center font-manropemedium text-[25px] pt-16 pb-14 sm:text-[30px] md:text-[35px]">The brands we worked with.</h1>
+      <section className="h-full px-3.5 py-14 pb-20 md:py-36 xl:py-56">
+        <h1 className="text-center font-manropemedium text-[25px] pb-14 sm:text-[30px] md:text-[35px]">The brands we worked with.</h1>
+        {/* pt-16 */}
         <div className="grid gap-y-12 lg:flex lg:flex-row lg:justify-between">
           <div className="lg:flex lg:justify-center lg:items-center">
             <img src={super_clamp} width={150} height={150} alt="" className="text-center mr-auto ml-auto" />
