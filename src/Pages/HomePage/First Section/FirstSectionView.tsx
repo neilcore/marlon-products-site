@@ -3,21 +3,11 @@ import React from "react";
 import "./firstsection.css";
 
 import video1 from "../../../assets/videos/video1.mp4";
-import marlonlogowhite from "../../../assets/images/logo/marlonlogowhite.png";
-import searchicon from "../../../assets/images/icons/searchicon.png";
-import locationicon from "../../../assets/images/icons/locationicon.png";
-import usericon from "../../../assets/images/icons/usericon.png";
-import menuicon from "../../../assets/images/icons/menuicon.png";
 import rectangle1 from "../../../assets/images/icons/rectangle1.svg";
 import Vector from "../../../assets/images/icons/Vector.svg";
 
-import icon_magnifying_glass from "../../../assets/images/icons/menu icons/icon _magnifying glass_.svg"
-import icon_User_ from "../../../assets/images/icons/menu icons/icon _User_.svg"
-import Group1 from "../../../assets/images/icons/menu icons/Group 1.svg"
-import icon_Location_ from "../../../assets/images/icons/menu icons/icon _Location_.svg" 
-
-import MobileViewMenu from "./MobileViewMenu"
-import MenuContainer from "../../Menu/MenuContainer"
+// import MenuContainer from "../../Menu/MenuContainer"
+import MenuContainer from "../../../Components/Menu/MenuContainer"
 
 const FirstSectionView = () => {
   return (

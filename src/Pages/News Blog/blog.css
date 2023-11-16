@@ -1,0 +1,22 @@
+.news-blog-first-section {
+    background-image: url("../../assets/images/news blog/Blog Photo.jpg");
+    padding: 25px 50px 25px 50px;
+}
+
+.blog-media-kit-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 31%;
+    width: 100%;
+    background-color: #ececec;
+}
+
+@media screen and (min-width: 1024px) {
+    .blog-media-kit-section::before { height: 20%; }
+}
+
+@media screen and (min-width: 1280px) {
+    .blog-media-kit-section::before { height: 22%; }
+}

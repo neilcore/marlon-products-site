@@ -1,11 +1,6 @@
 import React from "react";
 import "./products.css";
 
-import marlonlogowhite from "../../assets/images/logo/marlonlogowhite.png";
-import icon_magnifying_glass from "../../assets/images/icons/menu icons/icon _magnifying glass_.svg";
-import icon_User_ from "../../assets/images/icons/menu icons/icon _User_.svg";
-import Group1 from "../../assets/images/icons/menu icons/Group 1.svg";
-import icon_Location_ from "../../assets/images/icons/menu icons/icon _Location_.svg";
 import rectangle1 from "../../assets/images/icons/rectangle1.svg";
 import Rectangle2 from "../../assets/images/icons/Rectangle2.svg";
 
@@ -14,7 +9,6 @@ import Trailers from "../../assets/images/products/Trailers.jpg";
 import trucks_decks from "../../assets/images/products/trucks_decks.jpg";
 import Boats from "../../assets/images/products/Boats.jpg";
 
-import latestImport from "../../assets/images/products/Latest News.jpg";
 import Marlonize from "../../assets/images/products/Marlonize.jpg";
 import top10Docks from "../../assets/images/products/Blog - Top 10 Docks.jpg";
 import off30truckdecks from "../../assets/images/products/Blog - 30 off Truck Decks.png";
@@ -22,29 +16,39 @@ import off30truckdecks from "../../assets/images/products/Blog - 30 off Truck De
 import united_states from "../../assets/images/icons/flags/united-states.png";
 import canadaflagIcon from "../../assets/images/icons/flags/canada.png";
 
-import FooterContainer from "../Footer/FooterContainer";
+// import FooterContainer from "../Footer/FooterContainer";
+import FooterContainer from "../../Components/Footer/FooterContainer"
+import FooterMobileContainer from "../../Components/Footer/Mobile/FooterMobileContainer"
 
-import MenuContainer from "../Menu/MenuContainer";
-import FooterMobileContainer from "../Footer/Mobile/FooterMobileContainer";
+// import MenuContainer from "../Menu/MenuContainer";
+import MenuContainer from "../../Components/Menu/MenuContainer"
+// import FooterMobileContainer from "../Footer/Mobile/FooterMobileContainer";
 
 const ProductsView = () => {
   return (
     <>
-      <section className="products-first-section h-screen relative">
-        <div className="relative z-2">
+      <section className="first-section-products-page bg-center bg-cover bg-no-repeat relative py-6 px-3 sm:px-8 lg:h-full lg:pb-60 xl:pb-96 xl:px-14 xl:pt-14 h-screen">
+        <div className="relative z-2 mb-40">
           <MenuContainer />
         </div>
 
-        <div className="catchphrase-description">
-          <ul className="list-none m-0 p-0 overflow-hidden">
+        <div className="z-2 relative lg:ml-10">
+          {/* <ul className="list-none m-0 p-0 overflow-hidden">
             <li className="text-white float-left text-right">
               <img src={rectangle1} alt="" className="inline" />
             </li>
             <li id="catchphrase" className="float-left text-white text-right">
               Our Wide Range of Products. <br />
             </li>
-          </ul>
-          <p className="text-white text-start" id="description">
+          </ul> */}
+
+          <div className="sm:mb-7 lg:flex lg:items-center">
+            <img src={rectangle1} alt="" className="mr-5 sm:w-[50px] sm:h-[50px] xl:w-[63px] xl:h-[63px]" />
+            <p className="font-manropebold text-white text-[40px] sm:text-[60px] lg:text-[60px]">
+              Our Wide Range of Products.
+            </p>
+          </div>
+          <p className="text-white text-start font-manropemedium text-[20px] lg:ml-[66px] lg:text-[23px] xl:ml-20">
             A short brief introduction to the page. Viverra vitae cras rutrum
             malesuada. Aenean dictum <br />
             mattis consequat amet elementum quis ut tortor. Dui mattis nunc
@@ -155,7 +159,7 @@ const ProductsView = () => {
           </div>
           <div id="location">
             <h1>Check out our wide selection of parts!</h1>
-            <div>
+            <div className="sm:grid sm:gap-4">
               <a href="#" className="text-white" id="shop-canada">
                 Shop Canada{" "}
                 <img
@@ -199,7 +203,7 @@ const ProductsView = () => {
 
           <div className="shop-now-section">
             <div id="preview-img">
-              <img src={Marlonize} alt="" />
+              <img src={Marlonize} alt="" className="object-fill" />
             </div>
             <div id="text">
               <div>

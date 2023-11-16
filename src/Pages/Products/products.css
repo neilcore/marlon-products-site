@@ -1,3 +1,9 @@
+.first-section-products-page {
+    background-image: url("../../assets/images/products/Our-Culture-Bottom-Left.jpg");
+    padding: 25px 50px 25px 50px;
+}
+
+
 .products-first-section {
     /* height: 700px; */
     background-image: url("../../assets/images/products/Our-Culture-Bottom-Left.jpg");
