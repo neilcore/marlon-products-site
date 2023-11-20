@@ -5,6 +5,9 @@ import "./sixsection.css";
 import Rectangle2 from "../../../assets/images/icons/Rectangle2.svg";
 import bestboats1 from "../../../assets/images/home page/bestboats1.jpg";
 import bestboats2 from "../../../assets/images/home page/newBOAT2.jpg";
+import { Link } from "react-router-dom";
+
+// import { Carousel } from "@material-tailwind/react";
 
 const SixView = () => {
   return (
@@ -38,16 +41,9 @@ const SixView = () => {
           </h1>
 
           <div>
-            <a
-              href="#"
-              className="
-              shadow-md
-              bg-white text-[#3d3d3d] text-[18px] font-manroperegular inline-block py-2.5 px-8 rounded-xl
-              lg:py-4 lg:px-10
-              "
-            >
+            <Link to={"/"} className="shadow-md bg-white text-[#3d3d3d] font-manropesemibold inline-block py-3 px-8 rounded-xl sm:text-[23px] sm:py-5 sm:px-10">
               View All
-            </a>
+            </Link>
           </div>
 
         </div>
@@ -63,9 +59,7 @@ const SixView = () => {
                 turpis elit vitae in vulputate imperdiet. Iaculis nisl in in
                 dolor gravida. Duis quis laoreet quam suspendis.
               </p>
-              <a href="#" className="text-white font-manropemedium text-center bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]">
-                Read More
-              </a>
+              <Link to={"/"} className="text-white font-manropemedium text-center bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]">Read More</Link>
             </div>
           </div>
           <div className="bg-white rounded-2xl shadow-md">
@@ -79,9 +73,9 @@ const SixView = () => {
                 turpis elit vitae in vulputate imperdiet. Iaculis nisl in in
                 dolor gravida. Duis quis laoreet quam suspendis.
               </p>
-              <a href="#" className="text-white font-manropemedium text-center bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]">
+              <Link to={"/"} className="text-white font-manropemedium text-center bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]">
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
         </div>

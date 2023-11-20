@@ -4,6 +4,7 @@ import docks_hoist from "../../../assets/images/products/docks_hoist.jpg"
 import Trailers from "../../../assets/images/products/Trailers.jpg"
 import trucks_decks from "../../../assets/images/products/trucks_decks.jpg"
 import Boats from "../../../assets/images/products/Boats.jpg"
+import { Link } from "react-router-dom";
 
 const MainPage = () => {
   return (
@@ -23,30 +24,31 @@ const MainPage = () => {
       <div className="grid gap-y-8 mmobile:gap-y-11 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-4 lg:gap-x-4 xl:grid-cols-4">
         <div className="relative h-auto">
           <img src={Trailers} alt="" className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]" />
-          <div className="absolute bottom-3 left-0 p-2 ml-5">
+          <div className="absolute bottom-3 left-0 p-2 ml-5 lg:bottom-8">
             <h1 className="font-manropebold text-white text-[29px] mmobile:text-[35px]">Products</h1>
-            <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span>
+            <Link to={"/"} className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</Link>
           </div>
         </div>
         <div className="relative h-auto">
           <img src={docks_hoist} alt="" className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]" />
-          <div className="absolute bottom-3 left-0 p-2 ml-5">
+          <div className="absolute bottom-3 left-0 p-2 ml-5 lg:bottom-8">
             <h1 className="font-manropebold text-white text-[29px] mmobile:text-[35px]">Find A Dealer</h1>
-            <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span>
+            {/* <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span> */}
+            <Link to={"/"} className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</Link>
           </div>
         </div>
         <div className="relative h-auto">
           <img src={trucks_decks} alt="" className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]" />
-          <div className="absolute bottom-3 left-0 p-2 ml-5">
+          <div className="absolute bottom-3 left-0 p-2 ml-5 lg:bottom-8">
             <h1 className="font-manropebold text-white text-[29px] mmobile:text-[35px]">Become a Dealer</h1>
-            <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span>
+            <Link to={"/"} className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</Link>
           </div>
         </div>
         <div className="relative h-auto">
           <img src={Boats} alt="" className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]" />
-          <div className="absolute bottom-3 left-0 p-2 ml-5">
+          <div className="absolute bottom-3 left-0 p-2 ml-5 lg:bottom-8">
             <h1 className="font-manropebold text-white text-[29px] mmobile:text-[35px]">Marlon Gear</h1>
-            <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span>
+            <Link to={"/"} className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</Link>
           </div>
         </div>
       </div>

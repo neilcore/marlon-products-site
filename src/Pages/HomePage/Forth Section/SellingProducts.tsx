@@ -7,6 +7,7 @@ import TruckDecks from "../../../assets/images/home page/TruckDecks.jpg";
 import welded_boats from "../../../assets/images/home page/welded_boats.jpg";
 
 import Rectangle2 from "../../../assets/images/icons/Rectangle2.svg";
+import { Link } from "react-router-dom";
 
 const SellingProducts = () => {
   return (
@@ -39,29 +40,27 @@ const SellingProducts = () => {
             <img src={pontoon_boats} alt="" className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]" />
             <div className="absolute bottom-3 left-0 p-2 ml-5">
               <h1 className="font-manropebold text-white text-[29px] mmobile:text-[35px]">Pontoon Boats</h1>
-              <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span>
+              <Link to={"/"} className="font-manropebold text-white text-[18px] mmobile:text-[20px]">Learn More</Link>
             </div>
           </div>
           <div className="relative h-auto">
             <img src={welded_boats} alt="" className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]" />
             <div className="absolute bottom-3 left-0 p-2 ml-5">
               <h1 className="font-manropebold text-white text-[29px] mmobile:text-[35px]">Welded Boats</h1>
-              <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span>
+              <Link to={"/"} className="font-manropebold text-white text-[18px] mmobile:text-[20px]">Learn More</Link>
             </div>
           </div>
           <div className="relative h-auto">
             <img src={TruckDecks} alt="" className="h-[300px] w-full object-cover rounded-[12px] lg:h-[500px]" />
             <div className="absolute bottom-3 left-0 p-2 ml-5">
               <h1 className="font-manropebold text-white text-[29px] mmobile:text-[35px]">Truck Decks</h1>
-              <span className="font-manropebold text-white text-[18px] mmobile:text-[20px]">See More</span>
+              <Link to={"/"} className="font-manropebold text-white text-[18px] active:text-white mmobile:text-[20px]">Learn More</Link>
             </div>
           </div>
         </div>
 
         <div>
-          <a href="#" className="text-white no-underline block bg-[#3d3d3d] text-[20px] rounded-[10px] py-[15px] px-[30px] w-56">
-            View All Products
-          </a>
+          <Link to={"/"} className="text-white no-underline block bg-[#3d3d3d] text-[20px] rounded-[10px] py-[15px] px-[30px] w-56">View All Products</Link>
         </div>
       </Space>
     </>

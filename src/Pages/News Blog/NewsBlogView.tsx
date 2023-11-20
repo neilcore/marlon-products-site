@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./blog.css";
+import { Link } from 'react-router-dom';
 
 import marlonlogowhite from "../../assets/images/logo/marlonlogowhite.png"
 
@@ -15,8 +16,15 @@ import FooterMobileContainer from "../../Components/Footer/Mobile/FooterMobileCo
 import top10Docks from "../../assets/images/products/Blog - Top 10 Docks.jpg";
 
 import bestboats1 from "../../assets/images/home page/bestboats1.jpg";
+import { Button } from "antd";
 
-const NewsBlogView = () => {
+interface NewsBlogProps {
+  cards: any[],
+  setFilters:  React.Dispatch<React.SetStateAction<string>>,
+}
+const NewsBlogView = ({
+  cards, setFilters,
+}: NewsBlogProps) => {
   return (
     <div>
       <div className="news-blog-first-section h-screen bg-center bg-cover bg-no-repeat relative py-6 px-3 sm:px-8 lg:h-full lg:pb-60 xl:pb-96 xl:px-14 xl:pt-14">
@@ -54,9 +62,9 @@ const NewsBlogView = () => {
         <h1 className="font-manropebold text-[40px] mb-10 sm:text-[45px] xl:text-[65px]">
           Download our media kit.
         </h1>
-        <a href="#" className="text-white bg-[#3d3d3d] py-3.5 px-7 text-[20px] rounded-xl xl:text-[23px] xl:py-5 xl:px-10">
+        <Link to={"/"} className="text-white bg-[#3d3d3d] py-3.5 px-7 text-[20px] rounded-xl xl:text-[23px] xl:py-5 xl:px-10">
           Learn More
-        </a>
+        </Link>
       </div>
 
       <div className="blog-media-kit-section bg-white grid gap-10 h-full px-3 py-10 relative sm:px-8 sm:py-20 lg:px-12 lg:py-28 xl:px-28 xl:py-24">
@@ -80,211 +88,57 @@ const NewsBlogView = () => {
               Pulvinar in viverra egestas quis mattis. Est erat rutrum auctor et
               dictum neque. Non rutrum vivamus sagittis comem.
             </p>
-            <a
-              href="#"
-              className="text-white bg-[#3d3d3d] py-3.5 px-7 text-[20px] rounded-xl"
-            >
-              Read More
-            </a>
+            <Link to={"/"} className="text-white bg-[#3d3d3d] py-3.5 px-7 text-[20px] rounded-xl">Read More</Link>
           </div>
         </div>
 
         <div className="text-center relative">
           <div>
+            <img src={Group1} alt="" width={50} height={50} />
             <h1 className="text-[40px] font-manropelight mb-3 lg:text-start">
               Filters
             </h1>
             <div className="grid gap-4 mb-10 sm:flex sm:flex-col sm:items-center sm:justify-center lg:flex lg:flex-row lg:flex-wrap lg:justify-between">
-              <div className="bg-[#edecec] p-3 text-[25px] text-[#3d3d3d] font-manropemedium rounded-xl sm:w-64">
-                All
-              </div>
-              <div className="bg-[#edecec] p-3 text-[25px] text-[#3d3d3d] font-manropemedium rounded-xl sm:w-64">
-                Events
-              </div>
-              <div className="bg-[#edecec] p-3 text-[25px] text-[#3d3d3d] font-manropemedium rounded-xl sm:w-64">
-                News
-              </div>
-              <div className="bg-[#edecec] p-3 text-[25px] text-[#3d3d3d] font-manropemedium rounded-xl sm:w-64">
-                Tools
-              </div>
-              <div className="bg-[#edecec] p-3 text-[25px] text-[#3d3d3d] font-manropemedium rounded-xl sm:w-64">
-                Products
-              </div>
+              <div className="bg-[#edecec] p-3 text-[25px] text-[#3d3d3d] font-manropemedium hover:bg-[#D5D4D4] hover:cursor-pointer rounded-xl sm:w-64" onClick={() => setFilters("all")}>All</div>
+              <div className="bg-[#edecec] p-3 text-[25px] text-[#3d3d3d] font-manropemedium hover:bg-[#D5D4D4] hover:cursor-pointer rounded-xl sm:w-64" onClick={() => setFilters("events")}>Events</div>
+              <div className="bg-[#edecec] p-3 text-[25px] text-[#3d3d3d] font-manropemedium hover:bg-[#D5D4D4] hover:cursor-pointer rounded-xl sm:w-64" onClick={() => setFilters("news")}>News</div>
+              <div className="bg-[#edecec] p-3 text-[25px] text-[#3d3d3d] font-manropemedium hover:bg-[#D5D4D4] hover:cursor-pointer rounded-xl sm:w-64" onClick={() => setFilters("tools")}>Tools</div>
+              <div className="bg-[#edecec] p-3 text-[25px] text-[#3d3d3d] font-manropemedium hover:bg-[#D5D4D4] hover:cursor-pointer rounded-xl sm:w-64" onClick={() => setFilters("products")}>Products</div>
             </div>
           </div>
 
           <div className="grid gap-4 lg:grid-cols-3 lg:grid-rows-2 lg:gap-5">
-            {/* xl:w-[75rem] */}
-            <div className="bg-[#edecec] rounded-2xl">
-              <div>
-                <img
-                  src={top10Docks}
-                  alt=""
-                  className="w-full object-fill rounded-t-2xl"
-                />
-              </div>
-              <div className="p-5 sm:p-8 md:p-10 lg:p-5 xl:p-10">
-                <h2 className="font-manropebold text-start text-[27px] mb-5">
-                  Article #
-                </h2>
-                <p className="font-manropemedium text-start text-[20px] mb-5 sm:mb-8">
-                  Lorem ipsum dolor sit amet consectetur. Quisque scelerisque
-                  turpis elit vitae in vulputate imperdiet. Iaculis nisl in in
-                  dolor gravida. Duis quis laoreet quam suspendis.
-                </p>
-                <div className="flex">
-                  <a
-                    href="#"
-                    className="text-white font-manropemedium bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]"
-                  >
-                    Read More
-                  </a>
+            {cards?.map((card: any) => {
+              return(
+                <div key={card?.key} className="bg-[#edecec] rounded-2xl hover:shadow-md hover:transition-all">
+                  <div>
+                    <img
+                      src={top10Docks}
+                      alt=""
+                      className="w-full object-fill rounded-t-2xl"
+                    />
+                  </div>
+                  <div className="p-5 sm:p-8 md:p-10 lg:p-5 xl:p-10">
+                    <h2 className="font-manropebold text-start text-[27px] mb-5">
+                      {card?.title}
+                    </h2>
+                    <p className="font-manropemedium text-start text-[20px] mb-5 sm:mb-8">
+                      {card?.description}
+                    </p>
+                    <div className="flex">
+                      <Link to={"/"} className="text-white font-manropemedium bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]" title="Read More"> Read More</Link>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="bg-[#edecec] rounded-2xl">
-              <div>
-                <img
-                  src={top10Docks}
-                  alt=""
-                  className="w-full object-fill rounded-t-2xl"
-                />
-              </div>
-              <div className="p-5 sm:p-8 md:p-10 lg:p-5 xl:p-10">
-                <h2 className="font-manropebold text-start text-[27px] mb-5">
-                  Article #
-                </h2>
-                <p className="font-manropemedium text-start text-[20px] mb-5 sm:mb-8">
-                  Lorem ipsum dolor sit amet consectetur. Quisque scelerisque
-                  turpis elit vitae in vulputate imperdiet. Iaculis nisl in in
-                  dolor gravida. Duis quis laoreet quam suspendis.
-                </p>
-                <div className="flex">
-                  <a
-                    href="#"
-                    className="text-white font-manropemedium bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]"
-                  >
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#edecec] rounded-2xl">
-              <div>
-                <img
-                  src={top10Docks}
-                  alt=""
-                  className="w-full object-fill rounded-t-2xl"
-                />
-              </div>
-              <div className="p-5 sm:p-8 md:p-10 lg:p-5 xl:p-10">
-                <h2 className="font-manropebold text-start text-[27px] mb-5">
-                  Article #
-                </h2>
-                <p className="font-manropemedium text-start text-[20px] mb-5 sm:mb-8">
-                  Lorem ipsum dolor sit amet consectetur. Quisque scelerisque
-                  turpis elit vitae in vulputate imperdiet. Iaculis nisl in in
-                  dolor gravida. Duis quis laoreet quam suspendis.
-                </p>
-                <div className="flex">
-                  <a
-                    href="#"
-                    className="text-white font-manropemedium bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]"
-                  >
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#edecec] rounded-2xl">
-              <div>
-                <img
-                  src={top10Docks}
-                  alt=""
-                  className="w-full object-fill rounded-t-2xl"
-                />
-              </div>
-              <div className="p-5 sm:p-8 md:p-10 lg:p-5 xl:p-10">
-                <h2 className="font-manropebold text-start text-[27px] mb-5">
-                  Article #
-                </h2>
-                <p className="font-manropemedium text-start text-[20px] mb-5 sm:mb-8">
-                  Lorem ipsum dolor sit amet consectetur. Quisque scelerisque
-                  turpis elit vitae in vulputate imperdiet. Iaculis nisl in in
-                  dolor gravida. Duis quis laoreet quam suspendis.
-                </p>
-                <div className="flex">
-                  <a
-                    href="#"
-                    className="text-white font-manropemedium bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]"
-                  >
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#edecec] rounded-2xl">
-              <div>
-                <img
-                  src={top10Docks}
-                  alt=""
-                  className="w-full object-fill rounded-t-2xl"
-                />
-              </div>
-              <div className="p-5 sm:p-8 md:p-10 lg:p-5 xl:p-10">
-                <h2 className="font-manropebold text-start text-[27px] mb-5">
-                  Article #
-                </h2>
-                <p className="font-manropemedium text-start text-[20px] mb-5 sm:mb-8">
-                  Lorem ipsum dolor sit amet consectetur. Quisque scelerisque
-                  turpis elit vitae in vulputate imperdiet. Iaculis nisl in in
-                  dolor gravida. Duis quis laoreet quam suspendis.
-                </p>
-                <div className="flex">
-                  <a
-                    href="#"
-                    className="text-white font-manropemedium bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]"
-                  >
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#edecec] rounded-2xl">
-              <div>
-                <img
-                  src={top10Docks}
-                  alt=""
-                  className="w-full object-fill rounded-t-2xl"
-                />
-              </div>
-              <div className="p-5 sm:p-8 md:p-10 lg:p-5 xl:p-10">
-                <h2 className="font-manropebold text-start text-[27px] mb-5">
-                  Article #
-                </h2>
-                <p className="font-manropemedium text-start text-[20px] mb-5 sm:mb-8">
-                  Lorem ipsum dolor sit amet consectetur. Quisque scelerisque
-                  turpis elit vitae in vulputate imperdiet. Iaculis nisl in in
-                  dolor gravida. Duis quis laoreet quam suspendis.
-                </p>
-                <div className="flex">
-                  <a
-                    href="#"
-                    className="text-white font-manropemedium bg-[#3d3d3d] text-[17px] p-3 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]"
-                  >
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
+              )
+            })}
           </div>
         </div>
 
         <div className="flex justify-center">
-            <a href="#" className="text-white font-manropemedium bg-[#3d3d3d] text-[17px] p-3 px-16 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]">
-                Load More
-            </a>
+            <Link to={"/"} className="text-white font-manropemedium bg-[#3d3d3d] text-[17px] p-3 px-16 rounded-xl sm:py-4 sm:px-7 md:py-5 md:px-10 md:text-[20px]" title="Read More">
+              Read More
+            </Link>
         </div>
       </div>
 
